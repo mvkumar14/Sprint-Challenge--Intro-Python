@@ -3,11 +3,15 @@ from cityreader import City, cityreader
 
 def check_city(inp, exp):
     if inp.name != exp.name:
+      # print('false')
       return False
     if inp.lat != exp.lat:
+      # print('false')
       return False
     if inp.lon != exp.lon:
+      # print('false')
       return False
+    # print('true')
     return True
 
 class CityreaderTests(unittest.TestCase):
